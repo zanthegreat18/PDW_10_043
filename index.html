@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Daftar Minat Siswa</h3>
+        </div>
+        <form action="">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="nama" id="nama"><br><br>
+            <label for="nim">NIM</label><br>
+            <input type="text" placeholder="nim" id="nim"><br><br>
+            <p>Peminatan</p>
+            <input type="radio" name="peminatan" id="Programming" value="Programming">
+            <label for="Programming">Programming</label><br>
+            <input type="radio" name="peminatan" id="Design" value="Design">
+            <label for="Design">Design</label><br>
+            <input type="radio" name="peminatan" id="Database" value="Database">
+            <label for="Database">Database</label><br><br>
+            
+            <label for="jurusan">Jurusan</label><br>
+            <select id="jurusan">
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknologi Informasi">Teknologi Informasi</option>
+            </select><br><br>
+            
+            <label for="tanggal">Tanggal Lahir</label><br>
+            <input type="date" id="tanggal"><br><br>
+            
+            <label for="Alamat">Alamat</label><br>
+            <textarea placeholder="Tulis Alamat Anda" name="Alamat" id="Alamat" cols="30" rows="5"></textarea><br><br>
+            <button type="button" onclick="KirimData()">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
